@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="addbookcontainer">
+     <button class="addbutton"><img src="plus.svg" class="plus"/>add a book</button>   
+    </div>
+    
+    <div class="hide">
+        <form class="addbook">
+            <img src="x.svg" class="x"/>
+            <div class="input">
+                <label for="title">title</label>
+                <input type="text" name="title" id="title" required> 
+            </div>
+            
+            <div class="input">
+                <label for="author">author</label>
+                <input type="text" name="author" id="author" required>
+            </div>
+    
+            <div class="input">
+                <label for="pages">pages</label>
+                <input type="number" name="pages" id="pages" required>
+            </div>
+    
+            <div class="input">
+                <button type="submit">add book</button>
+            </div>
+        </form>
+    </div>
+    
+    <div class="library">
+        <ul class="librarycontainer">
+            <!-- <div class="book">
+                <p class="title">hobbit</p>
+                <p class="author">jj tolkien</p>
+                <p class="pages">300</p>
+                <button class="read">I've read this</button>
+                <button class="deleted">
+                    Remove
+                </button>
+            </div> -->
+        </ul>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
